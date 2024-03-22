@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:project/Screens/AssessmentScreen.dart';
+import 'package:project/Screens/ExpertsScreen.dart';
+import 'package:project/Screens/ProblemScreen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -65,18 +67,18 @@ class HomeScreen extends StatelessWidget {
                               ),
                               child: Column(
                                 children: [
-                                  // Container(
-                                  //   child: IconButton(onPressed: ()
-                                  //       {
-                                  //         Navigator.push(context,
-                                  //         MaterialPageRoute(builder: (context) => AssessmentPage()));
-                                  //       },
-                                  //       icon: const Icon(
-                                  //         Icons.add_card,
-                                  //         size: 100,
-                                  //       ),
-                                  //   ),
-                                  // ),
+                                  Container(
+                                    child: IconButton(onPressed: ()
+                                        {
+                                          Navigator.push(context,
+                                          MaterialPageRoute(builder: (context) => ProblemScreen()));
+                                        },
+                                        icon: const Icon(
+                                          Icons.add_card,
+                                          size: 100,
+                                        ),
+                                    ),
+                                  ),
                                   const Text('Know your mood'),
                                 ],
                               )
@@ -94,18 +96,18 @@ class HomeScreen extends StatelessWidget {
                                 ),
                                 child: Column(
                                   children: [
-                                    // Container(
-                                    //   child: IconButton(onPressed: ()
-                                    //   {
-                                    //     Navigator.push(context,
-                                    //         MaterialPageRoute(builder: (context) => AssessmentPage()));
-                                    //   },
-                                    //     icon: const Icon(
-                                    //       Icons.add_card,
-                                    //       size: 100,
-                                    //     ),
-                                    //   ),
-                                    // ),
+                                    Container(
+                                      child: IconButton(onPressed: ()
+                                      {
+                                        Navigator.push(context,
+                                            MaterialPageRoute(builder: (context) => ExpertsPage()));
+                                      },
+                                        icon: const Icon(
+                                          Icons.add_card,
+                                          size: 100,
+                                        ),
+                                      ),
+                                    ),
                                     Text('Talk to expert'),
                                   ],
                                 )
